@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Silfer Dev — FiveM Resources</title>
+<meta name="description" content="Silfer Dev builds modern FiveM resources focused on performance, usability and immersion." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+
+    <a href="#" class="nav__logo" aria-label="Silfer Dev, home">
+      <span class="nav__logo-mark" aria-hidden="true"></span>
+      SILFER DEV
+    </a>
+
+    <nav class="nav__links" id="nav-links" aria-label="Primary">
+      <a href="#hero">Home</a>
+      <a href="#resources">Resources</a>
+      <a href="#" data-doc-link>Documentation</a>
+      <a href="#about">About</a>
+      <a href="#discord" data-discord-link>Discord</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#resources" class="btn btn--ghost btn--sm">View Resources</a>
+
+      <button
+        class="nav__toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="nav-links-mobile"
+        aria-label="Open menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="nav__mobile" id="nav-links-mobile" aria-label="Mobile">
+    <a href="#hero">Home</a>
+    <a href="#resources">Resources</a>
+    <a href="#" data-doc-link>Documentation</a>
+    <a href="#about">About</a>
+    <a href="#discord" data-discord-link>Discord</a>
+    <a href="#resources" class="btn btn--primary btn--sm">View Resources</a>
+  </nav>
+</header>
+
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+
+      <div class="hero__copy reveal">
+        <p class="eyebrow">FiveM Development</p>
+
+        <h1 class="hero__title">
+          BUILD SOMETHING<br />DIFFERENT.
+        </h1>
+
+        <p class="hero__sub">
+          Modern FiveM resources built with performance, usability and immersion in mind.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#resources" class="btn btn--primary">
+            Explore Resources
+          </a>
+
+          <a href="#discord" class="btn btn--outline" data-discord-link>
+            Join Discord
+          </a>
+        </div>
+      </div>
+
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="editor">
+
+          <div class="editor__bar">
+            <span class="editor__dot"></span>
+            <span class="editor__dot"></span>
+            <span class="editor__dot"></span>
+
+            <span class="editor__tab">
+              fxmanifest.lua
+            </span>
+          </div>
+
+          <div class="editor__body">
+            <pre class="editor__code" id="editor-code"></pre>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ STATUS / BRAND STRIP ============ -->
+  <section class="status" aria-label="Silfer Dev">
+    <div class="status__inner reveal">
+
+      <div class="status__item">
+        <span class="status__value">FiveM</span>
+        <span class="status__label">Development</span>
+      </div>
+
+      <div class="status__divider" aria-hidden="true"></div>
+
+      <div class="status__item">
+        <span class="status__value">Free</span>
+        <span class="status__label">Resources</span>
+      </div>
+
+      <div class="status__divider" aria-hidden="true"></div>
+
+      <div class="status__item">
+        <span class="status__value">Premium</span>
+        <span class="status__label">Resources</span>
+      </div>
+
+      <span class="status__badge">
+        Building
+      </span>
+
+    </div>
+  </section>
+
+
+  <!-- ============ FEATURED RESOURCES ============ -->
+  <section class="resources" id="resources">
+
+    <div class="section__inner">
+
+      <div class="section__head reveal">
+        <h2>Featured Resources</h2>
+
+        <p>
+          Explore the Silfer Dev resource library.
+          New resources will appear here as they become available.
+        </p>
+      </div>
+
+
+      <div class="filters reveal" role="tablist" aria-label="Filter resources">
+
+        <button
+          class="filter is-active"
+          role="tab"
+          aria-selected="true"
+          data-filter="all"
+        >
+          All
+        </button>
+
+        <button
+          class="filter"
+          role="tab"
+          aria-selected="false"
+          data-filter="free"
+        >
+          Free
+        </button>
+
+        <button
+          class="filter"
+          role="tab"
+          aria-selected="false"
+          data-filter="premium"
+        >
+          Premium
+        </button>
+
+      </div>
+
+
+      <div class="card-grid reveal" id="resource-grid">
+
+        <!-- RESOURCE PLACEHOLDER -->
+
+        <article class="rcard" data-category="free">
+
+          <div class="rcard__bar">
+            <span class="rcard__dot"></span>
+            <span class="rcard__dot"></span>
+            <span class="rcard__dot"></span>
+
+            <span class="rcard__tab">
+              resource
+            </span>
+          </div>
+
+
+          <div class="rcard__body">
+
+            <h3>Coming Soon</h3>
+
+            <p>
+              The first Silfer Dev resource will be available here soon.
+            </p>
+
+            <div class="tags">
+              <span class="tag">FiveM</span>
+              <span class="tag">Free</span>
+            </div>
+
+            <div class="rcard__foot">
+              <span class="status-pill">
+                Coming soon
+              </span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- RESOURCE PLACEHOLDER -->
+
+        <article class="rcard" data-category="premium">
+
+          <div class="rcard__bar">
+            <span class="rcard__dot"></span>
+            <span class="rcard__dot"></span>
+            <span class="rcard__dot"></span>
+
+            <span class="rcard__tab">
+              resource
+            </span>
+          </div>
+
+
+          <div class="rcard__body">
+
+            <h3>Coming Soon</h3>
+
+            <p>
+              Premium Silfer Dev resources will appear here when ready.
+            </p>
+
+            <div class="tags">
+              <span class="tag">FiveM</span>
+              <span class="tag">Premium</span>
+            </div>
+
+            <div class="rcard__foot">
+              <span class="status-pill">
+                Coming soon
+              </span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- RESOURCE PLACEHOLDER -->
+
+        <article class="rcard" data-category="free">
+
+          <div class="rcard__bar">
+            <span class="rcard__dot"></span>
+            <span class="rcard__dot"></span>
+            <span class="rcard__dot"></span>
+
+            <span class="rcard__tab">
+              resource
+            </span>
+          </div>
+
+
+          <div class="rcard__body">
+
+            <h3>Coming Soon</h3>
+
+            <p>
+              Free community resources will be listed here as they are released.
+            </p>
+
+            <div class="tags">
+              <span class="tag">FiveM</span>
+              <span class="tag">Free</span>
+            </div>
+
+            <div class="rcard__foot">
+              <span class="status-pill">
+                Coming soon
+              </span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- RESOURCE PLACEHOLDER -->
+
+        <article class="rcard" data-category="premium">
+
+          <div class="rcard__bar">
+            <span class="rcard__dot"></span>
+            <span class="rcard__dot"></span>
+            <span class="rcard__dot"></span>
+
+            <span class="rcard__tab">
+              resource
+            </span>
+          </div>
+
+
+          <div class="rcard__body">
+
+            <h3>Coming Soon</h3>
+
+            <p>
+              More advanced resources will be announced when they are ready.
+            </p>
+
+            <div class="tags">
+              <span class="tag">FiveM</span>
+              <span class="tag">Premium</span>
+            </div>
+
+            <div class="rcard__foot">
+              <span class="status-pill">
+                Coming soon
+              </span>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ FREE RESOURCES ============ -->
+  <section class="split" id="free">
+
+    <div class="section__inner">
+
+      <div class="split__grid reveal">
+
+        <div class="split__copy">
+
+          <h2>Free Resources</h2>
+
+          <p>
+            Useful tools and resources for the FiveM community.
+          </p>
+
+          <p class="split__body">
+            Free Silfer Dev resources will be released here as they are
+            completed and ready for the community.
+          </p>
+
+          <a href="#resources" class="btn btn--outline">
+            Explore Free Resources
+          </a>
+
+        </div>
+
+
+        <div class="split__panel" aria-hidden="true">
+
+          <div class="mini-editor">
+
+            <div class="mini-editor__bar">
+              <span class="rcard__dot"></span>
+              <span class="rcard__dot"></span>
+              <span class="rcard__dot"></span>
+            </div>
+
+
+            <div class="mini-editor__body">
+
+              <p>
+                <span class="c-comment">
+                  -- Silfer Dev
+                </span>
+              </p>
+
+              <p>
+                <span class="c-key">
+                  resource
+                </span>
+                =
+                <span class="c-string">
+                  "coming soon"
+                </span>
+              </p>
+
+              <p>
+                <span class="c-key">
+                  status
+                </span>
+                =
+                <span class="c-string">
+                  "in development"
+                </span>
+              </p>
+
+              <p>
+                <span class="c-key">
+                  ready
+                </span>
+                =
+                <span class="c-string">
+                  false
+                </span>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============ PREMIUM RESOURCES ============ -->
+  <section class="resources resources--premium" id="premium">
+
+    <div class="section__inner">
+
+      <div class="section__head reveal">
+
+        <h2>Premium Resources</h2>
+
+        <p>
+          Advanced FiveM systems will be showcased here as they become available.
+        </p>
+
+      </div>
+
+
+      <div class="card-grid card-grid--premium reveal">
+
+
+        <!-- PREMIUM PLACEHOLDER -->
+
+        <article class="pcard">
+
+          <div class="pcard__preview" aria-hidden="true">
+            <div class="pcard__pattern"></div>
+          </div>
+
+
+          <div class="pcard__body">
+
+            <h3>Coming Soon</h3>
+
+            <p>
+              The first premium Silfer Dev resource will be announced here
+              when it is ready.
+            </p>
+
+            <div class="tags">
+              <span class="tag">FiveM</span>
+              <span class="tag">Premium</span>
+            </div>
+
+
+            <div class="pcard__foot">
+
+              <span class="status-pill">
+                Coming soon
+              </span>
+
+              <a
+                href="#"
+                class="btn btn--sm btn--ghost"
+                aria-disabled="true"
+              >
+                View Product
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PREMIUM PLACEHOLDER -->
+
+        <article class="pcard">
+
+          <div class="pcard__preview" aria-hidden="true">
+            <div class="pcard__pattern pcard__pattern--alt"></div>
+          </div>
+
+
+          <div class="pcard__body">
+
+            <h3>Coming Soon</h3>
+
+            <p>
+              More premium resources will be added as the Silfer Dev
+              library grows.
+            </p>
+
+            <div class="tags">
+              <span class="tag">FiveM</span>
+              <span class="tag">Premium</span>
+            </div>
+
+
+            <div class="pcard__foot">
+
+              <span class="status-pill">
+                Coming soon
+              </span>
+
+              <a
+                href="#"
+                class="btn btn--sm btn--ghost"
+                aria-disabled="true"
+              >
+                View Product
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+
+    <div class="section__inner">
+
+      <div class="about__grid reveal">
+
+        <div class="about__copy">
+
+          <h2>BUILT BY SILFER.</h2>
+
+          <p>
+            Silfer Dev is an independent development brand focused on
+            creating modern FiveM resources with attention to performance,
+            usability and detail.
+          </p>
+
+          <p>
+            The goal is simple: build resources that feel polished,
+            practical and different from the usual FiveM releases.
+          </p>
+
+        </div>
+
+
+        <div class="about__panel" aria-hidden="true">
+
+          <div class="mini-editor mini-editor--terminal">
+
+            <div class="mini-editor__bar">
+              <span class="rcard__dot"></span>
+              <span class="rcard__dot"></span>
+              <span class="rcard__dot"></span>
+            </div>
+
+
+            <div class="mini-editor__body mini-editor__body--terminal">
+
+              <p>
+                <span class="c-prompt">&gt;</span>
+                silfer-dev
+              </p>
+
+              <p class="dim">
+                building modern FiveM resources...
+              </p>
+
+              <p>
+                <span class="c-prompt">&gt;</span>
+                <span class="blink">_</span>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============ DISCORD CTA ============ -->
+  <section class="cta" id="discord">
+
+    <div class="section__inner">
+
+      <div class="cta__box reveal">
+
+        <h2>Join the Community</h2>
+
+        <p>
+          Follow new releases, updates, development previews and get support.
+        </p>
+
+        <a
+          href="#"
+          class="btn btn--primary"
+          data-discord-link
+        >
+          Join Discord
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+
+  <div class="section__inner">
+
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+
+        <span
+          class="nav__logo-mark"
+          aria-hidden="true"
+        ></span>
+
+        <p class="footer__title">
+          SILFER DEV
+        </p>
+
+        <p class="footer__sub">
+          FiveM Resources
+        </p>
+
+      </div>
+
+
+      <div class="footer__links">
+
+        <a href="#resources">
+          Resources
+        </a>
+
+        <a href="#" data-doc-link>
+          Documentation
+        </a>
+
+        <a href="#discord" data-discord-link>
+          Discord
+        </a>
+
+        <a href="#" data-github-link>
+          GitHub
+        </a>
+
+        <a href="#">
+          Terms
+        </a>
+
+        <a href="#">
+          Privacy
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <p class="footer__legal">
+      © <span id="year"></span> Silfer Dev. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
