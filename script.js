@@ -6,7 +6,7 @@
 // CONFIG — edit these links when they're ready.
 // ---------------------------------------------------------
 const CONFIG = {
-  DISCORD_URL: 'https://discord.gg/your-invite',
+  DISCORD_URL: 'https://discord.gg/BDQrRQYHxb',
   DOCS_URL: '#',
   GITHUB_URL: 'https://github.com/your-username',
 };
